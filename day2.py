@@ -9,11 +9,11 @@ with open("input2.txt", "r") as f:
 # part 1
 valid = 0
 for (lo, hi, char, password) in lines:
-    occured = 0
+    occurred = 0
     for c in password:
         if c == char:
-            occured += 1
-    if lo <= occured <= hi:
+            occurred += 1
+    if lo <= occurred <= hi:
         valid += 1
 print(valid)
 
